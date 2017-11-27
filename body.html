@@ -7,6 +7,19 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -16,7 +29,7 @@ body {font-family: "Lato", sans-serif}
 
 <!-- testimonial styles-->
 <style>
-.container {
+.tcontainer {
   border: 2px solid #ccc;
   background-color: #eee;
   border-radius: 5px;
@@ -24,28 +37,28 @@ body {font-family: "Lato", sans-serif}
   margin: 16px 0
 }
 
-.container::after {
+.tcontainer::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.container img {
+.tcontainer img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
 }
 
-.container span {
+.tcontainer span {
   font-size: 20px;
   margin-right: 15px;
 }
 
 @media (max-width: 500px) {
-  .container {
+  .tcontainer {
       text-align: center;
   }
-  .container img {
+  .tcontainer img {
       margin: auto;
       float: none;
       display: block;
@@ -72,7 +85,7 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#band" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">HALL OF FAME</a>
+  <a href="#courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
 </div>
@@ -84,122 +97,129 @@ body {font-family: "Lato", sans-serif}
 <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">welcome</span></h5>
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-      <img src="hof1.jpg" style="max-width:500px">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+  <div class="mySlides w3-center w3-animate-right">
+      <img src="hof1.jpg" style="max-width:650px">
     </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof2.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof2.jpg" style="max-width:650px">
   </div>
   <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof3.jpg" style="max-width:500px">
+    <img src="hof3.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof4.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof4.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-    <img src="hof5.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-right">
+    <img src="hof5.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof6.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof6.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof7.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof7.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof8.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof8.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-    <img src="hof9.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-right">
+    <img src="hof9.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof10.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof10.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof11.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof11.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof12.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof12.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-    <img src="hof13.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-right">
+    <img src="hof13.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof14.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof14.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof15.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof15.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof16.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof16.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-    <img src="hof17.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-right">
+    <img src="hof17.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof18.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof18.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof19.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof19.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof20.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof20.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-right">
-    <img src="hof21.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-right">
+    <img src="hof21.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-bottom">
-    <img src="hof22.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-bottom">
+    <img src="hof22.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof23.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof23.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-top">
-    <img src="hof24.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-top">
+    <img src="hof24.jpg" style="max-width:650px">
   </div>
-  <div class="mySlides w3-display-container w3-right w3-animate-left">
-    <img src="hof25.jpg" style="max-width:500px">
+  <div class="mySlides w3-center w3-animate-left">
+    <img src="hof25.jpg" style="max-width:650px">
   </div>
+</div>
+
 
 <!-- achievers-->
-
-
-<div class="w3-col m6 w3-padding-large w3-text-white">
+<div class="col-sm-6">
+<div class="w3-padding-large w3-text-size-xlarge w3-text-white">
       <h1 class="w3-center">Our Star Acheivers</h1><br>
-      <h5 class="w3-center">Since 1889</h5>
+      <h5 class="w3-center"></h5>
 
   <h2>Testimonials</h2>
 
 
-  <div class="container w3-text-black">
+  <div class="tcontainer w3-text-black">
     <img src="arbaz.jpg" alt="Arbaz" style="width:90px">
     <p><span >Mohammed Arbaz Patel</span>US</p>
     <p>Thanks to Maria Ma'ams guidance scored <span>100/120</span>in <span>TOEFL</span>Guys be regular with Ma'ams coaching and u will definitely get good results in exams like I did.Also in GRE verbal <span>151/170</span></p>
   </div>
 
 
-  <div class="container w3-text-black">
+  <div class="tcontainer w3-text-black">
     <img src="shikhar.jpg" alt="shikhar" style="width:90px">
     <p><span >Shikhar Nautiyal</span> Vancouver, British Columbia</p>
     <p>I have cleared my IELTS exam with overall score of 8 bands. I would like to thank Maria ma'am for supporting me though out my preparation. Some important things I would like to mention, which is practice intensively specially for writing. And reading section. I would also like to add , whatever material is recommended by ma'am are extremely helpful and crucial, especially when you don't have much time. <span>Follow blindly what Maria ma'am says!</span></p>
 </div>
 
-    <div class="container w3-text-black">
-    <img src="Vishnu.jpg" alt="Vishnu" style="width:90px">
+    <div class="tcontainer w3-text-black">
+    <img src="vishnu.jpg" alt="Vishnu" style="width:90px">
     <p><span>Vishnu Mane.</span> </p>
     <p>After trying to clear IELTS EXAM since past four years, I finally succeeded and got 6.5 bands, thanks to Maria mams classes which I joined last year. I had tried several coaching centres in and around PUNE, but, nothing helped till MARIA MAM's Classes recommended by other successful students. THANk YOU MAM..</p>
   </div>
 
-  <div class="container w3-text-black">
+  <div class="tcontainer w3-text-black">
     <img src="veejay.jpg" alt="vijay" style="width:90px">
     <p><span >Vijay Mhaske</span> .</p>
     <p>A trade technician, DME, with Marathi as my native language, it would have normally taken me 3 yrs to clear IELTS Exam. so, it took everyone with surprise, when I cleared IELTS General Exam with 7 bands, within a year. Thanks to Maria mam's classes I learnt grammar, in an easy step-by-step process with special emphasis on vocabulary, specialized tips and techniques that I managed 7 Band. Thanks Mam !</p>
   </div>
 
-  <div class="container w3-text-black">
+  <div class="tcontainer w3-text-black">
     <img src="Krishna.jpg" alt="krishna" style="width:90px">
     <p><span >Krishna Rao</span> .</p>
     <p>EXCELLENT.</p>
   </div>
+</div>
+</div>
 </div>
 </div>
 
@@ -216,13 +236,13 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-content w3-text-white sw3-center w3-padding-64 w3-padding-large" style="max-width:800px">
     <h2 class="w3-wide w3-center" id="about">About</h2>
     <p class="w3-opacity w3-center"><i>English For Everyone</i></p>
-    <p class="w3-justify w3-large">IELTS is an exam which tests not only your knowlege of English language, but also your logical skills and grasping power. As such, it requires highly technical skills to face the challenges of the test.
+    <p class="w3-justify w3-xlarge">IELTS is an exam which tests not only your knowlege of English language, but also your logical skills and grasping power. As such, it requires highly technical skills to face the challenges of the test.
 </p>
-<p class="w3-justify w3-large">A systematic and meticulous step by step approach, is taught to the students to master all the four modules of the tests.Each student is coached according to his/her individual ability. Focus is not only on
+<p class="w3-justify w3-xlarge">A systematic and meticulous step by step approach, is taught to the students to master all the four modules of the tests.Each student is coached according to his/her individual ability. Focus is not only on
 
 language development but also self confidence to express view points clearly, which has resulted in remarkable results.</p>
 
-<p class="w3-justify w3-large">The techniques taught have helped numerous students of IELTS/PTE/TOEFL to get the desired score within a short span of time. It is creditable to note that most of the students who passed were from vernacular background.They were able to overcome the language handicap with confidence and now settled around the world.</p>
+<p class="w3-justify w3-xlarge">The techniques taught have helped numerous students of IELTS/PTE/TOEFL to get the desired score within a short span of time. It is creditable to note that most of the students who passed were from vernacular background.They were able to overcome the language handicap with confidence and now settled around the world.</p>
 
 
     <div class="w3-row w3-padding-32">
@@ -250,28 +270,28 @@ language development but also self confidence to express view points clearly, wh
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-aqua">
+          <div class="w3-container w3-large w3-aqua">
             <p><b>IELTS</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Book a Free Session Now</button>
+            <p>International English Language Testing System</p>
+            <p>Register for a Free Session</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Register</button>
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-large w3-margin-bottom">
           <div class="w3-container w3-pink">
             <p><b>PTE</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Book a Free Session Now</button>
+            <p>Pearson Test of English<span class="w3-text-pink">this is pteeee</span></p>
+            <p>Register for a Free Session</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Register</button>
           </div>
 
         </div>
-        <div class="w3-third w3-margin-bottom">
+        <div class="w3-third w3-large w3-margin-bottom">
         <div class="w3-container w3-red">
             <p><b>TOEFL</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Book a Free Session Now</button>
+                        <p>Test of English as a Foreign Language </p>
+            <p>Register for a Free Session</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Register</button>
           </div>
         </div>
       </div>
