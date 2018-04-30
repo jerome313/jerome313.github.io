@@ -104,11 +104,12 @@ p{font-size:120%;}
 
 	<!-- Navbar on small screens -->
 	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-	  <a href="#band" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-	  <a href="#courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a>
-	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-	  <a href="#" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-	</div>
+	  <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+	  <a href="index.html#courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a>
+	  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+	  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+	 <a href="#" class="w3-bar-item w3-button w3-padding-large">TESTIMONIALS</a>
+	</div
 
 
 
@@ -230,7 +231,19 @@ p{font-size:120%;}
 	</div>
 	</div>
 	</div>
-
+<script>
+	// Used to toggle the menu on small screens when clicking on the menu button
+	function myFunction() {
+	    var x = document.getElementById("navDemo");
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else {
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}    
+	</script>
+	
+	
 
 	</body>
 	</html>
