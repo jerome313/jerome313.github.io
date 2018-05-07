@@ -91,26 +91,22 @@ p{font-size:120%;}
 	<!-- Navbar -->
 	<div class="w3-top">
 	  <div class="w3-bar w3-black w3-card">
-	    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"><i class="fa fa-bars"></i></a>
-	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES</a>
-	    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TESTIMONIALS</a>
+	    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	    <a href="#" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+	    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+	    <a href="#courses" class="w3-bar-item w3-button w3-hide-small">COURSES</a>
+	    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>	   
 	    </div>
 	    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
 	  </div>
 	</div>
-
+	
 	<!-- Navbar on small screens -->
 	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-	  <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-	  <a href="index.html#courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a>
-	  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-	  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-	 <a href="#" class="w3-bar-item w3-button w3-padding-large">TESTIMONIALS</a>
-	</div
-
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+		<a href="#courses" class="w3-bar-item w3-button w3-padding-large">COURSES</a>
+	</div>
+	
 
 
 
@@ -285,6 +281,14 @@ Maria Maam's class and also appeared for IELTS exam, but, could not get through.
 	<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
 	  <a href="https://www.facebook.com/mariaromelscoaching/"><img class="img-responsive center-block" style="width:100px" src="fb.png"></a>
 	</footer>
-
+// Used to toggle the menu on small screens when clicking on the menu button
+	function myFunction() {
+	    var x = document.getElementById("navDemo");
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else {
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}
 	</body>
 	</html>
